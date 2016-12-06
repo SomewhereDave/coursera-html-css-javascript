@@ -12,11 +12,13 @@ body {
 
 h1 {
 	text-align: center;
+	font-size: 175%;
 }
 
 section {
 	margin-bottom: 15px;
 	float: left;
+	font-size: 125%;
 }
 
 /*Menu names*/
@@ -27,13 +29,14 @@ section {
 	margin-right: 10px;
 }
 
-section div div:nth-child(1) {
+.outer > div:nth-child(1) {
 	font-weight: bold;
 	text-align: center;
 	float: right;
 	border: solid black;
 	border-width: 0 0 2px 2px;
 	width: 25%;
+	overflow: auto; /*applies when browsers is narrowed to down to minimal width*/
 }
 
 .inner {
