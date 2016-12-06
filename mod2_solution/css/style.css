@@ -1,0 +1,85 @@
+/*Stylesheet of Assignment 2*/ 
+
+/*Base Styles*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: comic sans ms, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+section {
+	margin-bottom: 15px;
+	float: left;
+}
+
+/*Menu names*/
+.outer {
+	border: 2px solid black;
+	background-color: lightgrey;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+section div div:nth-child(1) {
+	font-weight: bold;
+	text-align: center;
+	float: right;
+	border: solid black;
+	border-width: 0 0 2px 2px;
+	width: 25%;
+}
+
+.inner {
+	clear: right;
+	padding: 0px 15px 0px 15px;
+}
+
+#chicken {
+	background-color: #D59898;
+}
+
+#beef {
+	background-color: #C14543;
+	color: white;
+}
+
+#sushi {
+	background-color: #E5D198; 	
+}
+
+/***** Media Queries *****/
+/*Desktop*/
+@media (min-width: 992px) {
+	section {
+		width: 33.33%;
+	}
+}
+
+/*Tablet*/
+@media(min-width: 768px) and (max-width: 991px){
+
+	#first{
+		width: 50%;
+	}
+	#second{
+		width: 50%;
+	}
+	#third{
+		width: 100%;
+	}
+
+}
+
+/*Mobile*/
+@media(max-width: 767px){
+	section {
+		width: 100%; /*actually redundant, but left here for clarity*/ 
+	}
+}
